@@ -69,7 +69,7 @@ pub fn main() void {
     // Hey, we can't just pass this runtime variable as an
     // argument to the scaleMe() method. What would let us do
     // that?
-    var scale: u32 = undefined;
+    comptime var scale: u32 = undefined;
 
     scale = 32; // 1:32 scale
 
@@ -93,7 +93,7 @@ pub fn main() void {
 // scale of 1:0?
 //
 //    A) You're already done!
-//    B) You would suffer a mental divide-by-zero error.
+//    B) YOU WOULD SUFFER A MENTAL DIVIDE-BY-ZERO ERROR.
 //    C) You would construct a singularity and destroy the
 //       planet.
 //
@@ -101,8 +101,8 @@ pub fn main() void {
 //
 //    A) You're already done!
 //    B) You'd arrange nothing carefully into the form of the
-//       original nothing but infinitely larger.
-//    C) You would construct a singularity and destroy the
-//       planet.
+//       original nothing but infinitely larger. <-- ofc it's this one
+//    C) YOU WOULD CONSTRUCT A SINGULARITY AND DESTROY THE
+//       PLANET.
 //
 // Answers can be found on the back of the Ziglings packaging.

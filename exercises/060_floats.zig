@@ -40,7 +40,8 @@ pub fn main() void {
     //
     // We'll convert this weight from tons to kilograms at a
     // conversion of 907.18kg to the ton.
-    var shuttle_weight: f16 = 907.18 * 2200;
+    print("{}", .{0x2A.F7p+3});
+    var shuttle_weight: f32 = 907.18 * 2200.0;
 
     // By default, float values are formatted in scientific
     // notation. Try experimenting with '{d}' and '{d:.3}' to see
